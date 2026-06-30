@@ -1,0 +1,67 @@
+kontext:
+  ziel: >
+    Prüfe, ob der Inhalt des Buches oder des Inhaltsverzeichnisses thematisch relevant
+    für den Sammlungsbestand des Deutschen Buch- und Schriftmuseums ist.
+    Relevant sind Werke, die sich mit der Geschichte, Technik, Gestaltung, Herstellung,
+    Materialität, Vermittlung oder Nutzung von Buch, Schrift, Druck, Grafik,
+    visueller Kommunikation und verwandten Medien befassen.
+    Der thematische Schwerpunkt des Museums liegt nicht nur auf Buchgeschichte,
+    sondern umfasst ebenso Drucktechniken, grafische Verfahren, Schriftgestaltung,
+    Beschreibstoffe, Papierkunde, Restaurierung, Bibliotheks- und Museumswesen,
+    Verlagswesen, Buch- und Medienkunst sowie alle verwandten handwerklichen,
+    künstlerischen oder technischen Prozesse.
+    Auch praktische oder künstlerische Darstellungen von Druck- und Grafikverfahren
+    (z. B. Linoldruck, Siebdruck, Tiefdruck, Holzschnitt) gelten als relevant,
+    sofern sie Verfahren betreffen, die in der Buch-, Schrift-, Druck- oder Medienproduktion
+    oder deren gestalterischem Umfeld eine Rolle spielen.
+
+relevante_bereiche:
+  - Buchwissenschaft und Buchgeschichte
+  - Beschreibstoffe (Papier, Pergament, Buntpapiere)
+  - Schreibgeräte und Schriftgeschichte
+  - Drucktechnik, Typografie, Druckgeschichte
+  - Grafische Techniken, Illustration, Buchgestaltung, Einbandkunde
+  - Verlagswesen, Buchhandel, Pressegeschichte
+  - Bibliothekswesen, Museumswesen
+  - Restaurierung und Konservierung
+  - Digitale Archivierung im Kontext von Schrift- und Buchkultur
+  - Buch- und Medienkunst (z. B. Künstlerbücher, Pressendrucke, Comics, visuelle Publikationen)
+  - Informatik, KI oder Digitalisierung in Museum, Archiv, Bibliothek
+  - Wasserzeichen, Papierforschung
+  - Erschließung und Vermittlung von Bibliotheks- und Museumsbeständen
+  - Praktische und künstlerische Druckverfahren (z. B. Linoldruck, Siebdruck, Tiefdruck, Holzschnitt)
+
+nicht_relevant:
+  - Biologie, Zoologie (z. B. Buchdrucker als Insekt)
+  - Botanik
+  - Medizin
+  - Theologie
+  - Belletristik (außer Druck- oder Buchgeschichte)
+  - Chemie, Physik, Geologie (ohne Bezug zur Buchherstellung)
+  - Landwirtschaft und Naturkunde
+  - reine Verwaltungs- oder Personalthemen ohne Medienbezug
+  - Schulbücher 
+  - Reiseführer
+
+positive_beispiele:
+  - "Techniken des Holzschnitts und Kupferstichs"
+  - "Die Entwicklung der Typografie im 20. Jahrhundert"
+  - "Papierherstellung in der frühen Neuzeit"
+  - "Restaurierung historischer Buchbestände"
+  - "Verlagswesen in der Moderne"
+  - "Künstlerbücher und experimentelle Druckverfahren"
+
+negative_beispiele:
+  - "Die Borkenkäfer Deutschlands"
+  - "Pflanzen des Alpenraums"
+  - "Die Chemie des Klebstoffs"
+  - "Roman über einen Buchhändler"  
+  - "100 Orte in Barcelona"
+  - "111 Orte auf Norderney, die man gesehen haben muss"
+
+
+
+ausgabeformat: |
+  IDN: [Nummer]
+  Relevanz: relevant / nicht relevant
+  Begründung: [1–2 Sätze]
