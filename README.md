@@ -29,6 +29,7 @@ PICA Dump (.dat.gz)
    → Anreicherung für WinIBW / Katalogsystem
 
 
+
 1. PICA-Datenextraktion (Basisdatenaufbau)
 Ziel
 
@@ -56,6 +57,8 @@ Output = Zwischenauswertung1.xlsx
 Zusatzlogik
 Duplikaterkennung über idn.txt
 keine Mehrfachverarbeitung identischer Datensätze
+
+
 
 2️. DNB Volltextanalyse + Schlagwortgewichtung
 Ziel
@@ -93,6 +96,8 @@ Gewicht wird erhöht
 Systematik kann überschrieben werden
 
 Output = ergebnis_juni_2026.xlsx
+
+
 
 3️. KI-basierte Relevanzbewertung + ESK-Klassifikation
 Ziel
@@ -137,6 +142,8 @@ zusätzliche Spalte: „Übernehmen“
 
 Output = Ki_juni_2026_2.xlsx
 
+
+
 4️. PICA-Rückschreibung (WinIBW-Anreicherung)
 Ziel
 
@@ -149,14 +156,11 @@ Codes extrahieren (Regex)
 Schritt 2: Mapping
 
 ESK-Code → PICA-IDN
-
 Mapping erfolgt über YAML-Datei:
-
 esk-idn.yaml
 Schritt 3: DAT-Datei Generierung
 
 Für jeden Datensatz:
-
 IDN
 5320 <PICA-IDN aus ESK Mapping>
 4700 |BSM|*Relevanztext$hNVF-2606
@@ -164,11 +168,12 @@ IDN
 Output = update_045Pjuni2.dat
 
 ➡ direkt nutzbar für:
-
 WinIBW
 Kataloganreicherung
 PICA Importprozesse
 Systemanforderungen
+
+
 
 ⚙️ Installation
 Voraussetzungen
