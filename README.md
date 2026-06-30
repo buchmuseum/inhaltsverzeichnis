@@ -39,7 +39,7 @@ Filterung eines großen .dat.gz PICA-Dumps
 Anwendung eines PICA-Filters:
 z. B. Materialtyp / Kategorieeinschränkung
 Extraktion folgender Felder:
-📦 Metadaten
+Metadaten
 IDN
 Titel
 Titelzusatz
@@ -51,7 +51,7 @@ DDC
 Schlagwörter
 Output
 
-📄 Zwischenauswertung1.xlsx
+Output = Zwischenauswertung1.xlsx
 
 Zusatzlogik
 Duplikaterkennung über idn.txt
@@ -63,24 +63,24 @@ Ziel
 Inhaltliche Analyse der DNB-Inhaltsverzeichnisse zur semantischen Bewertung.
 
 Ablauf
-🌐 Webzugriff
+Webzugriff
 Zugriff auf:
-https://d-nb.info/{IDN}/04/text
-🔎 Analyse
+https://d-nb.info/{IDN}/04/text 
+Analyse
 Volltext wird bereinigt und normalisiert
 Schlagwörter aus Mapping-Tabelle werden gesucht
-⚖️ Gewichtungssystem
+Gewichtungssystem
 
 Jeder Treffer hat:
 
 Anzahl Treffer
 Gewichtung
 zugeordnete Systematik
-📊 Ergebnis pro Datensatz
+Ergebnis pro Datensatz
 Gesamtgewichtung
 Gefundene Schlagwörter
 beste Systematik
-🔗 Kombination mit Metadaten
+Kombination mit Metadaten
 
 Zusätzlich werden berücksichtigt:
 
@@ -92,7 +92,7 @@ Schlagwortfelder aus PICA
 Gewicht wird erhöht
 Systematik kann überschrieben werden
 
-📄 ergebnis_juni_2026.xlsx
+Output = ergebnis_juni_2026.xlsx
 
 3️. KI-basierte Relevanzbewertung + ESK-Klassifikation
 Ziel
@@ -103,7 +103,7 @@ Eingabe
 DNB Inhaltsverzeichnis (OCR / Text)
 Relevanzkriterien (YAML)
 Beispiele für relevante/nicht relevante Inhalte
-🧠 KI-Relevanzbewertung
+KI-Relevanzbewertung
 
 Das Modell entscheidet:
 
@@ -113,7 +113,7 @@ nicht relevant
 
 inkl. Begründung
 
-🏷️ ESK-Klassifikation
+ESK-Klassifikation
 
 Nur bei:
 
@@ -127,7 +127,7 @@ Regeln:
 immer spezifischste Unterkategorie bevorzugen (z. B. ESK.16.4)
 historische Inhalte → immer ".4 Geschichte"
 Fachbereich schlägt allgemeine Kategorie
-🎨 Ergebnisaufbereitung
+Ergebnisaufbereitung
 Farbliche Markierung in Excel:
 🟢 relevant
 🟠 teilweise relevant
@@ -135,13 +135,13 @@ Farbliche Markierung in Excel:
 automatische Filterung irrelevanter Einträge
 zusätzliche Spalte: „Übernehmen“
 
-📄 Ki_juni_2026_2.xlsx
+Output = Ki_juni_2026_2.xlsx
 
 4️. PICA-Rückschreibung (WinIBW-Anreicherung)
 Ziel
 
 Rückführung der KI-Ergebnisse in PICA-Struktur zur Systemanreicherung.
-🔄 Verarbeitung
+Verarbeitung
 Schritt 1: ESK-Extraktion
 Parsing der KI-Antwort:
 ESK: ...
@@ -161,7 +161,7 @@ IDN
 5320 <PICA-IDN aus ESK Mapping>
 4700 |BSM|*Relevanztext$hNVF-2606
 
-📄 update_045Pjuni2.dat
+Output = update_045Pjuni2.dat
 
 ➡ direkt nutzbar für:
 
@@ -186,12 +186,12 @@ gültiger API-Key notwendig
 base_url = "https://chat-ai.academiccloud.de/v1"
 model = "openai-gpt-oss-120b"
 
-🌐 Externe Abhängigkeiten
+Externe Abhängigkeiten
 Deutsche Nationalbibliothek (DNB)
 Inhaltsverzeichnisse über IDN-Endpunkte
 Internetverbindung zwingend erforderlich
 
-📁 Dateivoraussetzungen
+Dateivoraussetzungen
 PICA-Datendump (.dat.gz) 
 Maaping-exceltabelle (.xlsx) 
 Schlagwort → Gewichtung → Systematik 
